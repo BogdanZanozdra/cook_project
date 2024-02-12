@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>{{ recipe.title }}</h2><br>
+<img src="{{ recipe.image }}">
+<p>{{ recipe.description }}</p><br>
+<p>{{ recipe.cooking_steps }}</p><br>
+<p>{{ recipe.cooking_steps }}</p><br>
+<p>{{ recipe.category }}</p><br>
+<p>{{ recipe.author }}</p><br>
+<p><a href="{% url 'recipes_app:update_recipe' recipe.author.pk %}">Редактировать рецепт</a></p>
+{% endblock %}
