@@ -3,9 +3,8 @@
 {% block content %}
 
 <h2>{{ recipe.title }}</h2><br>
-<img src="{{ recipe.image }}">
+<img src="{{ recipe.image.url }}">
 <p>{{ recipe.description }}</p><br>
-<p>{{ recipe.cooking_steps }}</p><br>
 <p>{{ recipe.cooking_steps }}</p><br>
 <p>{{ recipe.category }}</p><br>
 <p>{{ recipe.author }}</p><br>
